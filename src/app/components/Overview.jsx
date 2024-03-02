@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, {useRef, HTMLDivElement} from "react"
 import { motion, AnimatePresence, useScroll } from "framer-motion"
 
 export default function Overview() {
