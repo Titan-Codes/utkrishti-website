@@ -1,17 +1,19 @@
 import React, {useRef, HTMLDivElement} from "react"
-import { motion, AnimatePresence, useScroll } from "framer-motion"
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 
 export default function Overview() {
     const ref = useRef<HTMLDivElement>(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["0 1", "1.001 1"]
+        offset: ["0 1", "1.33 1"]
     })
+    const scaleProgress = useTransform(scrollYProgress, [0,1], [0.8,1]);
+    const opacityProgress = useTransform(scrollYProgress, [0,1], [0.6,1]);
     return (<>
         <motion.div
         style={{
-            scale: scrollYProgress,
-            opacity: scrollYProgress
+            scale: scaleProgress,
+            opacity: opacityProgress
         }}
         >
             <div className="flex items-center justify-center py-8 md:px-2 lg:px-4 sm:px-4 w-full h-full">
