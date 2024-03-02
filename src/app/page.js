@@ -14,6 +14,7 @@ import line from '../../public/Line.svg'
 import HeroPage from "./components/HeroPage";
 import Header from "./components/Header";
 import PageWrapper from "./PageWrapper";
+import Overview from "./components/Overview";
 
 export default function Home() {
   return (<>
@@ -21,6 +22,9 @@ export default function Home() {
     <PageWrapper>
       <section className="w-screen relative h-full bg-[#1f1f1f] flex items-center justify-center flex-col" id="home">
         <HeroPage />
+      </section>
+      <section id="overview" className="w-screen relative h-full bg-[#1f1f1f] flex items-center justify-center flex-col">
+        <Overview />
       </section>
     </PageWrapper>
     <Footer />
