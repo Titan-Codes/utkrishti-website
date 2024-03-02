@@ -128,14 +128,23 @@
 
 body {
   font-family: "space_crusadersregular";
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background-color: #1f1f1f;
   overflow-x: hidden;
 }
 
+.mainHeading {
+  font-style: italic;
+}
+
+.secHeading {
+  font-style: italic;
+}
+
 .paragraphText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-style: italic; */
+  /* font-weight: 400; */
 }
 
 @layer utilities {

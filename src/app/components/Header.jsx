@@ -3,9 +3,14 @@ import logo from '../../../public/favicon.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import {motion, AnimatePresence} from "framer-motion"
+import { usePathname } from 'next/navigation'
+
 
 export default function Header() {
+    const path = usePathname();
     const [navbarOpen, setNavbarOpen] = useState(false);
+    console.log(path)
     return (<>
         <header className="w-screen flex justify-center items-center">
             <nav className="px-4 py-4 w-full flex justify-between items-center">
@@ -36,27 +41,27 @@ export default function Header() {
                 <div className="hidden lg:flex flex-row items-center justify-center p-1">
                     <div className="flex flex-row items-center justify-center gap-12 p-1">
                         <Link href="/">
-                            <div className="flex item-center font-black text-sm justify-center cursor-pointer text-[#ffffff] hover:text-[#921ae8]" >
+                            <div className={`${path == "/" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`} >
                                 Home
                             </div>
                         </Link>
                         <Link href="/">
-                            <div className="flex item-center font-black text-sm justify-center cursor-pointer text-[#ffffff] hover:text-[#921ae8]">
+                            <div className={`${path == "/overview" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Overview
                             </div>
                         </Link>
-                        <Link href="/">
-                            <div className="flex item-center font-black text-sm justify-center cursor-pointer text-[#ffffff] hover:text-[#921ae8]">
+                        <Link href="/gallery">
+                            <div className={`${path == "/gallery" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Gallery
                             </div>
                         </Link>
                         <Link href="/">
-                            <div className="flex item-center font-black text-sm justify-center cursor-pointer text-[#ffffff] hover:text-[#921ae8]">
+                            <div className={`${path == "/pastevents" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Past Events
                             </div>
                         </Link>
                         <Link href="/">
-                            <div className="flex item-center font-black text-sm justify-center cursor-pointer text-[#ffffff] hover:text-[#921ae8]">
+                            <div className={`${path == "/socials" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Socials
                             </div>
                         </Link>
