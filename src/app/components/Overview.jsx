@@ -32,22 +32,22 @@ export default function Overview() {
                     <div className="w-full h-full flex items-start justify-center flex-row py-2 lg:p-2">
                         <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 lg:grid-cols-3">
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/standeeWali.jpg" className="h-full" />
+                                <img alt="" src="/standeeWali.jpg" className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/canopy.jpg" className="h-full" />
+                                <img alt="" src="/canopy.jpg" className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/boardWali.jpg" className="h-full" />
+                                <img alt="" src="/boardWali.jpg" className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/bgflip.jpg" className="h-full" />
+                                <img alt="" src="/bgflip.jpg" className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/bag.jpg" className="h-full" />
+                                <img alt="" src="/bag.jpg" className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={600} height={200} src="/mukul.jpg" className="h-full" />
+                                <img alt="" src="/mukul.jpg" className="h-full" />
                             </div>
                         </div>
                     </div>
