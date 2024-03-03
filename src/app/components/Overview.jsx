@@ -1,31 +1,59 @@
-import React, {useRef, HTMLDivElement} from "react"
+import React, { useRef, HTMLDivElement } from "react"
+import Image from "next/image"
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
+import boardWali from "../../../public/boardWali.jpg"
+import standeeWali from "../../../public/standeeWali.jpg"
+import canopy from "../../../public/canopy.jpg"
+import bgflip from "../../../public/bgflip.jpg"
+import bag from "../../../public/bag.jpg"
+import mukul from "../../../public/mukul.jpg"
 
 export default function Overview() {
-    const ref = useRef<HTMLDivElement>(null);
-    const {scrollYProgress} = useScroll({
+    const ref = useRef < HTMLDivElement > (null);
+    const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["0 1", "1.33 1"]
     })
-    const scaleProgress = useTransform(scrollYProgress, [0,1], [0.8,1]);
-    const opacityProgress = useTransform(scrollYProgress, [0,1], [0.6,1]);
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
     return (<>
-        <motion.div
-        style={{
-            scale: scaleProgress,
-            opacity: opacityProgress
-        }}
-        >
-            <div className="flex items-center justify-center py-8 md:px-2 lg:px-4 sm:px-4 w-full h-full">
-                <div className='flex items-center justify-center px-2 sm:px-4 md:px-2 lg:px-4 flex-col max-w-[95%] h-full py-4'>
-                    <div className='flex items-start justify-start flex-col md:flex-row w-full p-1  gap-6 sm:p-2 my-6'>
-
-                        <p className='paragraphText font-normal text-[0.7rem] xs:text-xs sm:text-sm lg:text-lg text-[#d6d5d5]'>Buckle up for the biggest tech showdown with Coding Ninjas CUIET’s another flagship event ”Utkrishti 2024: An Odyssey of Career Advancement and Innovation”. After what feels like a lifetime, the ultimate tech celebration is finally here! Experience thrilling battles, career advices, industrial talks, top-notch entertainment and delectable treats all in one place. From coding battles to mock interviews, we have curated surprises for everyone, ensuring an unforgettable experience.
-                        </p>
-
+        <section id="overview" className="w-screen h-screen bg-[#000000] flex items-center justify-center">
+            <motion.div
+                style={{
+                    scale: scaleProgress,
+                    opacity: opacityProgress
+                }}
+                className="w-full h-full"
+            >
+                <div className="w-full h-full flex items-center justify-center flex-col py-4 lg:p-2">
+                        <div className="heading flex items-center justify-start">
+                            <h1 className="text-[4rem]">OVERVIEW</h1>
+                        </div>
+                    <div className="w-full h-full flex items-start justify-center flex-row py-2 lg:p-2">
+                        <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 lg:grid-cols-3">
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={standeeWali} className="h-full" />
+                            </div>
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={canopy} className="h-full" />
+                            </div>
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={boardWali} className="h-full" />
+                            </div>
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={bgflip} className="h-full" />
+                            </div>
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={bag} className="h-full" />
+                            </div>
+                            <div className="rounded-lg border-4 border-[#921ae8] h-94">
+                                <Image src={mukul} className="h-full" />
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </section>
     </>)
 }

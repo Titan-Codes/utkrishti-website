@@ -45,8 +45,8 @@ export default function Header() {
                                 Home
                             </div>
                         </Link>
-                        <Link href="/">
-                            <div className={`${path == "/overview" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
+                        <Link href="/#overview">
+                            <div className={`${path == "/#overview" ? "text-[#921ae8]": "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Overview
                             </div>
                         </Link>
