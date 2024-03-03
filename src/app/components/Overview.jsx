@@ -1,4 +1,4 @@
-import React, { useRef, HTMLDivElement } from "react"
+import React, { useRef } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import boardWali from "../../../public/boardWali.jpg"
@@ -9,7 +9,7 @@ import bag from "../../../public/bag.jpg"
 import mukul from "../../../public/mukul.jpg"
 
 export default function Overview() {
-    const ref = useRef < HTMLDivElement > (null);
+    const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["0 1", "1.33 1"]
@@ -32,22 +32,22 @@ export default function Overview() {
                     <div className="w-full h-full flex items-start justify-center flex-row py-2 lg:p-2">
                         <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 lg:grid-cols-3">
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={standeeWali} className="h-full" />
+                                <Image alt="" src={standeeWali} className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={canopy} className="h-full" />
+                                <Image alt="" src={canopy} className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={boardWali} className="h-full" />
+                                <Image alt="" src={boardWali} className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={bgflip} className="h-full" />
+                                <Image alt="" src={bgflip} className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={bag} className="h-full" />
+                                <Image alt="" src={bag} className="h-full" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image src={mukul} className="h-full" />
+                                <Image alt="" src={mukul} className="h-full" />
                             </div>
                         </div>
                     </div>
