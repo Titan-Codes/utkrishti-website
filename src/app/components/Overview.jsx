@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import boardwali from "public/boardwali.jpg";
-import standeewali from "public/standeewali.jpg";
-import canopy from "public/canopy.jpg";
-import bgflip from "public/bgflip.jpg";
-import bag from "public/bag.jpg";
-import mukul from "public/mukul.jpg";
+import boardwali from "../../../public/boardwali.jpg";
+import standeewali from "../../../public/standeewali.jpg";
+import canopy from "../../../public/canopy.jpg";
+import bgflip from "../../../public/bgflip.jpg";
+import bag from "../../../public/bag.jpg";
+import mukul from "../../../public/mukul.jpg";
 import { useRef } from "react";
 
 export default function Overview() {
