@@ -1,12 +1,12 @@
 import React, { useRef } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
-import boardWali from "../../../public/boardWali.jpg"
-import standeeWali from "../../../public/standeeWali.jpg"
-import canopy from "../../../public/canopy.jpg"
-import bgflip from "../../../public/bgflip.jpg"
-import bag from "../../../public/bag.jpg"
-import mukul from "../../../public/mukul.jpg"
+import boardWali from "boardWali.jpg"
+import standeeWali from "standeeWali.jpg"
+import canopy from "canopy.jpg"
+import bgflip from "bgflip.jpg"
+import bag from "bag.jpg"
+import mukul from "mukul.jpg"
 
 export default function Overview() {
     const ref = useRef(null);
