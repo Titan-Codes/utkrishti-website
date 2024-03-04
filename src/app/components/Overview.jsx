@@ -109,7 +109,9 @@ export default function Overview() {
 
                     </Swiper>
                 </div>
-
+                    <div className="secFooter flex items-center justify-center flex-col py-4 lg:p-[2rem]">
+                        <h2 className="secHeading text-[#fff] text-3xl">AN OVERVIEW OF OUR EVENT: <span>UTKRISHTI<span className="text-[#921ae8]">'24</span></span></h2>
+                    </div>
             </motion.div>
         </section>
     </>)
