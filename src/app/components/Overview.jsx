@@ -1,11 +1,5 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-// import boardwali from "/public/boardwali.jpg";
-// import standeewali from "/public/standeewali.jpg";
-// import canopy from "/public/canopy.jpg";
-// import bgflip from "/public/bgflip.jpg";
-// import bag from "/public/bag.jpg";
-// import mukul from "/public/mukul.jpg";
 import { useRef } from "react";
 
 export default function Overview() {
@@ -17,7 +11,7 @@ export default function Overview() {
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
     return (<>
-        <section id="overview" className="w-screen h-screen bg-[#000000] flex items-center justify-center">
+        <section id="overview" className="w-screen h-full bg-[#000000] flex items-center justify-center">
             <motion.div
                 style={{
                     scale: scaleProgress,
@@ -27,7 +21,7 @@ export default function Overview() {
             >
                 <div className="w-full h-full flex items-center justify-center flex-col py-4 lg:p-2">
                         <div className="heading flex items-center justify-start">
-                            <h1 className="text-[4rem]">OVERVIEW</h1>
+                            <h1 className="text-[4rem] text-[#fff]">OVERVIEW</h1>
                         </div>
                     <div className="w-full h-full flex items-start justify-center flex-row py-2 lg:p-2">
                         <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 lg:grid-cols-3">
