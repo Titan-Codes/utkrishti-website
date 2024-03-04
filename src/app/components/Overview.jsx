@@ -32,22 +32,22 @@ export default function Overview() {
                     <div className="w-full h-full flex items-start justify-center flex-row py-2 lg:p-2">
                         <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 lg:grid-cols-3">
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/standeewali.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/standeewali.jpg" className="" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/canopy.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/canopy.jpg" className="" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/boardwali.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/boardwali.jpg" className="" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/bgflip.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/bgflip.jpg" className="" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/bag.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/bag.jpg" className="" />
                             </div>
                             <div className="rounded-lg border-4 border-[#921ae8] h-94">
-                                <Image alt="" width={500} height={500} src="/mukul.jpg" className="h-full" />
+                                <Image alt="" width={500} height={500} src="/mukul.jpg" className="" />
                             </div>
                         </div>
                     </div>
