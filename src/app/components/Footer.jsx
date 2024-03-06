@@ -2,7 +2,6 @@ import React from 'react'
 import logo from '../../../public/favicon.png'
 import Image from 'next/image'
 import line from '../../../public/line2.svg'
-// import pdf from '../../../public/rulebook.pdf'
 
 export default function Footer(){
     return <>

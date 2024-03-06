@@ -1,8 +1,5 @@
 import React from 'react'
 import Image from "next/image";
-import Head from 'next/head'
-import Script from 'next/script'
-import logo from "../../../public/favicon.png"
 import Link from 'next/link'
 import { useState } from "react";
 import star from '../../../public/star.svg'
