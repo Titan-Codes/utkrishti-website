@@ -59,7 +59,7 @@ export default function Header() {
                                 Past Events
                             </div>
                         </Link>
-                        <Link href="/">
+                        <Link href="#socials">
                             <div className={`${path == "/socials" ? "text-[#921ae8]" : "text-[#ffffff]"} flex item-center font-black text-sm justify-center cursor-pointer hover:text-[#921ae8]`}>
                                 Socials
                             </div>

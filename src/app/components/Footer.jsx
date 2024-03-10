@@ -5,7 +5,7 @@ import line from '../../../public/line2.svg'
 
 export default function Footer(){
     return <>
-    <section className="w-screen h-full">
+    <section className="w-screen h-full bg-[#000]">
       <div className="flex items-center justify-center w-full h-full p-4">
         <div className="flex items-center justify-center w-full h-full xs:p-2">
           <div className="flex items-center justify-center w-full h-full flex-col s:p-2">
@@ -17,6 +17,7 @@ export default function Footer(){
                 <h1 className="text-2xl xs:text-3xl  text-center s:text-4xl font-black sm:leading-tight text-[#ffffff]">
                	Join us at <span className="text-[#000]">Utkrishti</span>
                 </h1>
+                <h2 className="text-xl xs:text-2xl text-center s:text-3xl sm:leading-tight">THE BIGGEST TECH CELEBRATION</h2>
               </div>
               {/* <div className="flex items-center justify-center flex-row gap-4 md:mb-12 py-2 my-2 xs:my-6 w-full xs:w-[95%] sm:w-[75%] lg:w-[50%]">
                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSezH9p9sd8QHaBhQO1v7bjHWj8VfEseCkYYyG4uiy3nPL-8nA/viewform?usp=sf_link" className="flex items-center justify-center w-[85%] xs:w-full bg-white group hover:bg-transparent transition duration-200 ease-in-out hover:border hover:border-black rounded-full p-2 flex-1">

@@ -4,6 +4,7 @@ import HeroPage from "./components/HeroPage";
 import Header from "./components/Header";
 import PageWrapper from "./PageWrapper";
 import Overview from "./components/Overview";
+import Socials from "./components/Socials";
 
 export default function Home() {
   return (<>
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroPage />
       </section>
       <Overview />
+      <Socials />
     </PageWrapper>
     <Footer />
   </>

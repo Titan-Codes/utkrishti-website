@@ -17,7 +17,7 @@ export default function Overview() {
     })
 
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
-    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
     return (<>
         <section id="overview" className="w-screen h-full bg-[#000000] flex items-center justify-center">
             <motion.div
